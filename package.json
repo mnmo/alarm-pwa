@@ -1,0 +1,24 @@
+{
+  "name": "alarm-pwa",
+  "version": "0.1.0",
+  "description": "A proof of concept of a webapp alarm using push notifications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnmo/alarm-pwa.git"
+  },
+  "keywords": [
+    "pwa",
+    "wip",
+    "webapp"
+  ],
+  "author": "Fabricio C Zuardi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnmo/alarm-pwa/issues"
+  },
+  "homepage": "https://github.com/mnmo/alarm-pwa#readme"
+}
