@@ -1,14 +1,11 @@
 // @flow
-const BASE_URL = "https://oodsykqmze.localtunnel.me/";
-// const BASE_URL = '.';
-const SW_URL = `${BASE_URL}sw.js`;
-
-console.log({ BASE_URL });
-console.log({ SW_URL });
+const SW_URL = `./sw.js`;
 
 window.addEventListener("load", function() {
-  const hasServiceWorker = navigator.serviceWorker === undefined;
-  console.assert(hasServiceWorker);
+  console.assert(
+    navigator.serviceWorker !== undefined,
+    `Browser don't support service worker`
+  );
   if (navigator.serviceWorker === undefined) {
     return false;
   }
