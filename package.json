@@ -4,7 +4,10 @@
   "description": "A proof of concept of a webapp alarm using push notifications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [ "prettier --write", "git add" ]
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/mnmo/alarm-pwa/issues"
   },
-  "homepage": "https://github.com/mnmo/alarm-pwa#readme"
+  "homepage": "https://github.com/mnmo/alarm-pwa#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3"
+  }
 }
