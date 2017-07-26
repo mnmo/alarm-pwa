@@ -4,14 +4,13 @@
   "description": "A proof of concept of a webapp alarm using push notifications.",
   "main": "index.js",
   "scripts": {
-      "start": "budo --live src/app.js",
+    "start": "budo --live --dir src src/app.js",
     "bundle": "browserify --entry src/app.js --transform unflowify --outfile docs/scripts/app.js",
     "precommit": "lint-staged"
   },
   "lint-staged": {
     "src/*.js": [
       "prettier --write",
-      "flow",
       "git add"
     ]
   },

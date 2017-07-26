@@ -24,7 +24,8 @@ npm i -g localtunnel
 lt --port 9966
 ```
 
-But you could use your own certificates with budo or a different service such as  ngrok too.
+If you are testing locally https is not a requirement for service works and using ```http://localhost:9966``` should be fine.
+
 
 [budo]: https://github.com/mattdesl/budo
 [localtunnel]: https://localtunnel.me
