@@ -4,10 +4,14 @@
   "description": "A proof of concept of a webapp alarm using push notifications.",
   "main": "index.js",
   "scripts": {
+    "bundle": "browserify --entry src/app.js --transform unflowify --outfile docs/scripts/app.js",
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [ "prettier --write", "git add" ]
+    "src/*.js": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -25,8 +29,11 @@
   },
   "homepage": "https://github.com/mnmo/alarm-pwa#readme",
   "devDependencies": {
+    "browserify": "^14.4.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.2",
-    "prettier": "^1.5.3"
-  }
+    "prettier": "^1.5.3",
+    "unflowify": "^1.0.1"
+  },
+  "dependencies": {}
 }
