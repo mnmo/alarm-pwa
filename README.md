@@ -24,9 +24,6 @@ npm i -g localtunnel
 lt --port 9966
 ```
 
-Remember to open port 36657 on your router, to keep localtunnel active and to keep your subdomain.
-
-
 If you are testing locally https is not a requirement for service works and using ```http://localhost:9966``` should be fine.
 
 
